@@ -2,7 +2,7 @@ package payment
 
 import market.MarketData.{exchangeRatesOfBTC, exchangeRatesToEUR}
 import payment.Protocol.Commands._
-import payment.Protocol.Errors._
+import payment.Protocol.DomainErrors._
 import payment.Protocol.Queries._
 import payment.Protocol.Responses._
 import payment.Types.{LocalDateTimeGen, UUIDGen}

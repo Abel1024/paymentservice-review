@@ -1,7 +1,7 @@
 package ps.service
 
 import payment.Protocol.Commands.Command
-import payment.Protocol.Errors.PaymentError
+import payment.Protocol.DomainErrors.PaymentError
 import payment.Protocol.Queries.Query
 import payment.Protocol.Responses.Response
 import payment.{Configuration, Payments, VectorPayments}

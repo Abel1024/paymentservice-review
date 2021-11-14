@@ -33,7 +33,7 @@ object Protocol {
     case class PaymentsResponse(payments: Seq[PaymentResponse]) extends Response
   }
 
-  object Errors {
+  object DomainErrors {
     sealed trait PaymentError
     case class UnknownFiatCurrency(currency: String) extends PaymentError
     case class UnknownCryptoCurrency(crypto: String) extends PaymentError

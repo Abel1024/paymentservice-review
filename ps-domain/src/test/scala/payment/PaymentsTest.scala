@@ -5,7 +5,7 @@ import org.scalatest.matchers.should.Matchers
 import org.scalatest.{EitherValues, OptionValues}
 import payment.PaymentsTest.withPayments
 import payment.Protocol.Commands._
-import payment.Protocol.Errors._
+import payment.Protocol.DomainErrors._
 import payment.Protocol.Queries._
 import payment.Protocol.Responses.PaymentResponse
 import ps.time.TimeImplicits._
