@@ -1,0 +1,93 @@
+{
+  "info": {
+    "_postman_id": "8495d9f6-fe60-443e-aa58-db4ac49bd092",
+    "name": "Payment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "new",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"coinCurrency\": \"BTCx\",\n  \"fiatAmount\": 220.0,\n  \"fiatCurrency\": \"EUR\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "localhost:8080/payment/new"
+      },
+      "response": []
+    },
+    {
+      "name": "all",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "localhost:8080/payment/all"
+      },
+      "response": []
+    },
+    {
+      "name": "byId",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "localhost:8080/payment/68cfbbd1-fde9-481a-a99d-d677d1ee5bb8"
+      },
+      "response": []
+    },
+    {
+      "name": "byFiatEur",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/payments?currency=EUR",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "payments"
+          ],
+          "query": [
+            {
+              "key": "currency",
+              "value": "EUR"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "byFiatUsd",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/payments?currency=USD",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "payments"
+          ],
+          "query": [
+            {
+              "key": "currency",
+              "value": "USD"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

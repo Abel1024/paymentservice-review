@@ -1,29 +1,35 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Recruitment task review.
 
-### What is this repository for? ###
+### Assumptions ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+The code in this repository is created with keeping these goals in mind:
 
-### How do I get set up? ###
+* test first approach TDD (in the domain area)
+* isolation and encapsulation (limit the dependencies between software components)
+* maintainability
+* ease of future extensions
+* separation of state mutators and lookups
+* testing at the interface level (not testing individual classes)
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### How to run the HttpServer ###
 
-### Contribution guidelines ###
+In the main project directory:
 
-* Writing tests
-* Code review
-* Other guidelines
+```sbt
+sbt run
+```
 
-### Who do I talk to? ###
+### How to send HTTP requests ###
 
-* Repo owner or admin
-* Other community or team contact
+Configuration for [Postman](https://www.postman.com/company/about-postman/) can be found
+here: [Postman Collection](Payment.postman_collection.json)
+
+### Running tests ###
+
+In the main project directory:
+
+```sbt
+sbt clean test
+```
