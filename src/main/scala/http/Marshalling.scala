@@ -18,6 +18,7 @@ object Marshalling {
       case _ => throw DeserializationException("Expected hexadecimal UUID string")
     }
   }
+  
   implicit object DateJsonFormat extends RootJsonFormat[LocalDateTime] {
     override def write(ldt: LocalDateTime): JsString = JsString(TimeFormats.long.format(ldt))
     override def read(json: JsValue): LocalDateTime = json match {
